@@ -1,0 +1,136 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="20a9b8a5-8377-47b5-a640-d18d37b1367b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DATAWER 1</ID>
+  <Name>olap_sueldos</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DATAWER</DataSourceID>
+  <Schema>
+    <xs:schema id="DATAWER" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DATAWER" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="f0a12be8-dffd-49af-8874-0ea741dfe789">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FACT_SUELDOS" msprop:design-time-name="c2cbf50c-40f0-4a01-9fd6-9f4c31a14186" msprop:FriendlyName="FACT_SUELDOS" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="FACT_SUELDOS">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_dim_tiempo" msprop:FriendlyName="id_dim_tiempo" msprop:DbColumnName="id_dim_tiempo" msprop:design-time-name="36705875-4f6c-4a9b-b8f1-631ca236ab4c" type="xs:int" />
+                  <xs:element name="id_dim_empleado" msprop:FriendlyName="id_dim_empleado" msprop:DbColumnName="id_dim_empleado" msprop:design-time-name="2fc19dba-18cc-49b9-9116-a58db020ffd4" type="xs:int" />
+                  <xs:element name="version_empleado" msprop:FriendlyName="version_empleado" msprop:DbColumnName="version_empleado" msprop:design-time-name="570a3f31-28bb-475d-ab41-fee19ceb5de3" type="xs:int" />
+                  <xs:element name="sueldo" msprop:FriendlyName="sueldo" msprop:DbColumnName="sueldo" msprop:design-time-name="f294d29b-6c72-49cb-a467-1c8cf4708944" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TIEMPO" msprop:design-time-name="583be79d-c3ee-46a2-8c75-0c1424576af4" msprop:FriendlyName="DIM_TIEMPO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="DIM_TIEMPO">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tiempo" msprop:FriendlyName="id_tiempo" msprop:DbColumnName="id_tiempo" msprop:design-time-name="8ae05031-872c-4720-9216-a9382231aaae" type="xs:int" />
+                  <xs:element name="anio" msprop:FriendlyName="anio" msprop:DbColumnName="anio" msprop:design-time-name="1396110e-4ce7-4143-a90e-c9d9139e6190" type="xs:int" />
+                  <xs:element name="trimestre" msprop:FriendlyName="trimestre" msprop:DbColumnName="trimestre" msprop:design-time-name="bdb9ddd5-70fe-4875-9560-852e0911d282" type="xs:int" />
+                  <xs:element name="mes_nombre" msprop:FriendlyName="mes_nombre" msprop:DbColumnName="mes_nombre" msprop:design-time-name="2a6471aa-41ed-44dc-b789-ba44dfc4e9c0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="mes_numero" msprop:FriendlyName="mes_numero" msprop:DbColumnName="mes_numero" msprop:design-time-name="9e7a3883-1cf2-431f-840f-2f040c7762fb" type="xs:int" />
+                  <xs:element name="semestre" msprop:FriendlyName="semestre" msprop:DbColumnName="semestre" msprop:design-time-name="6ee38dd8-6b08-4564-a29e-82523334b726" type="xs:int" />
+                  <xs:element name="fecha" msprop:FriendlyName="fecha" msprop:DbColumnName="fecha" msprop:design-time-name="c5300361-ea09-4bc9-8b58-47bd8ad1ed4a" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_EMPLEADO" msprop:design-time-name="2385bf9a-8e7f-494f-944e-a3aa3db1102a" msprop:FriendlyName="DIM_EMPLEADO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:DbTableName="DIM_EMPLEADO">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_empleado" msprop:FriendlyName="id_empleado" msprop:DbColumnName="id_empleado" msprop:design-time-name="63ab180a-f720-49d7-a521-c2b30bffcde3" type="xs:int" />
+                  <xs:element name="nombre_completo" msprop:FriendlyName="nombre_completo" msprop:DbColumnName="nombre_completo" msprop:design-time-name="ba79f192-935c-43db-8739-48d828256307">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fecha_ingreso" msprop:FriendlyName="fecha_ingreso" msprop:DbColumnName="fecha_ingreso" msprop:design-time-name="133f6666-dc15-4d6c-9e38-853c110932f5" type="xs:int" />
+                  <xs:element name="cargo" msprop:FriendlyName="cargo" msprop:DbColumnName="cargo" msprop:design-time-name="5ac07770-a295-462f-890e-f4ce2293e034">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="departamento" msprop:FriendlyName="departamento" msprop:DbColumnName="departamento" msprop:design-time-name="64781ab8-0cbb-491e-862a-38e0a9310e92">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="version" msprop:FriendlyName="version" msprop:DbColumnName="version" msprop:design-time-name="13afa93d-12a2-4bc8-a9a5-08a9b98eebd8" type="xs:int" />
+                  <xs:element name="version_actual" msprop:FriendlyName="version_actual" msprop:DbColumnName="version_actual" msprop:design-time-name="e7126b74-5b7c-42fe-a494-0de8406c1149" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_SUELDOS" />
+          <xs:field xpath="id_dim_tiempo" />
+          <xs:field xpath="id_dim_empleado" />
+          <xs:field xpath="version_empleado" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TIEMPO" />
+          <xs:field xpath="id_tiempo" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_EMPLEADO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_EMPLEADO" />
+          <xs:field xpath="id_empleado" />
+        </xs:unique>
+        <xs:keyref name="FK__fact_suel__id_di__7E37BEF6" refer="dbo_DIM_EMPLEADO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_SUELDOS" />
+          <xs:field xpath="id_dim_empleado" />
+        </xs:keyref>
+        <xs:keyref name="FK__fact_suel__id_di__7D439ABD" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_SUELDOS" />
+          <xs:field xpath="id_dim_tiempo" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <DATAWER xmlns="" />
+  </Schema>
+</DataSourceView>
