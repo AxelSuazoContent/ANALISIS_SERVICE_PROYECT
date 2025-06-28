@@ -1,4 +1,4 @@
-![License](https://img.shields.io/github/license/tuusuario/datawarehouse-integration)n Service
+![License](https://img.shields.io/github/license/tuusuario/datawarehouse-integration)
 ![Status](https://img.shields.io/badge/status-beta-yellow) ![License](https://img.shields.io/github/license/AxelSuazoContent/ANALISIS_SERVICE_PROYECT)
 
 ---
